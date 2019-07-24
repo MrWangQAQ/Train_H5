@@ -1,0 +1,21 @@
+@import '@/style/app.mixin.scss';
+
+$header-height: 2rem;
+.flexible {
+    padding-top: $header-height;
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: $header-height;
+        background-color: #4859ca;
+        line-height: $header-height;
+        @include font-dpr(24px);
+    }
+    .content {
+        background: linear-gradient(#ada8403b, bisque);
+        height: 30rem;
+        line-height: 30rem;
+        @include font-dpr(36px);
+    }
+}

@@ -1,0 +1,19 @@
+@import '@/style/app.fn.scss';
+$header-height: pxToRem(80);
+
+.scss-rem {
+    padding-top: $header-height;
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: $header-height;
+        background-color: #4859ca;
+        line-height: $header-height;
+    }
+    .content {
+        background: linear-gradient(#ada8403b, bisque);
+        height: pxToRem(1500);
+        line-height: pxToRem(1500);
+    }
+}

@@ -1,0 +1,30 @@
+.rotate-animation {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .move-block {
+        width: 10px;
+        height: 150px;
+        background-color: aqua;
+        animation: rotateAnimation 5s cubic-bezier(.5,0,1,.5);
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        transform-origin: 5px 120px;
+    }
+    @keyframes rotateAnimation {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        50% {
+            animation-timing-function:  cubic-bezier(0,.5,.5,1);
+            transform: rotate(180deg);
+        }
+
+        100% {
+            animation-timing-function:  cubic-bezier(.5,0,1,.5);
+            transform: rotate(360deg)
+        }
+    }
+}

@@ -1,3 +1,7 @@
+/**
+ * css加载器配置
+ */
+
 'use strict'
 const utils = require('./utils')
 const config = require('../config')
